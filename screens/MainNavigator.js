@@ -14,9 +14,9 @@ NOTES
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import { DofScreen } from './screens/DofScreen';
-import { LightMeterScreen } from './screens/LightMeterScreen'
-import { CircleButton } from './components/CircleButton';
+import { DofScreen } from './DofScreen';
+import { LightMeterScreen } from './LightMeterScreen'
+import { CircleButton } from '../components/CircleButton';
 
 /*Screens for Navigation. Should be in their own .js files-------------------------*/
 const HomeScreen = ({navigation}) => (
@@ -55,7 +55,7 @@ const Log = ({navigation}) => (
   </View>
 );
 
-const MyNavigator = StackNavigator({
+const MainNavigator = StackNavigator({
   //The first one is the default screen.
   Home: {
     screen: HomeScreen
@@ -78,7 +78,7 @@ const MyNavigator = StackNavigator({
 });
 
 /*Make Navigator for public use----------------------------------------------------*/
-export default MyNavigator;
+export default MainNavigator;
 
 /*Styles---------------------------------------------------------------------------*/
 const styles = StyleSheet.create({
