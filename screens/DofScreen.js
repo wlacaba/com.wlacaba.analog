@@ -9,9 +9,6 @@ import { CircleButton } from '../components/CircleButton';
 
 export class DofScreen extends React.Component {
     render() {
-        const {params} = this.props.navigation.state;
-        const myTest = params ? params.test : null;
-        let number = 0;
         return (
             <View style={styles.standardView}>
                 <StatusBar barStyle='dark-content'/>
