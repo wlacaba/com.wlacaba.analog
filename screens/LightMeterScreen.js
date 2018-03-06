@@ -1,6 +1,18 @@
 /*
-Screen for calculating the depth of field. Will replace 
-<Text> in the right column with actual inputs later. 
+NAME
+    LightMeterScreen
+
+PURPOSE
+    Screen for calculating the exposure settings. Will replace 
+    <Text> in the right column with actual inputs later. 
+
+NOTES
+    The states {isoResult, apertureResult, speedResult} are used to act like
+    radio buttons, meaning, only one can be true at any given time.
+
+    Example: When isoResult is true, we will be using Aperture and Speed
+    as inputs in order to calculate ISO. The corresponding input for ISO is
+    disabled, since this is what we're calculating, not choosing.
 */
 
 import React from 'react';

@@ -1,6 +1,13 @@
 /*
-Screen for calculating the depth of field. Will replace 
-<Text> in the right column with actual inputs later. 
+NAME
+    DofScreen
+
+PURPOSE
+    Screen for calculating the depth of field. Will replace 
+    <Text> in the right column with actual inputs later. 
+
+NOTES
+    
 */
 
 import React from 'react';

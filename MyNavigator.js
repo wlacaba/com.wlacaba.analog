@@ -1,5 +1,14 @@
 /*
-Playing around with app layout. Will make each screen its own .js file later.
+NAME
+  MyNavigator
+
+PURPOSE
+  Main navigation for the app, implemented as a StackNavigator.
+
+NOTES
+  Playing around with app layout. Will make each screen its own .js file later.
+  Also, note to self: why are tabs smaller on this file compared to the others...
+  what's up with that VS Code? Haha.
 */
 
 import React from 'react';
