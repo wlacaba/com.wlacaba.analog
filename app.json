@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "ANALOG",
+    "sdkVersion": "23.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "com.wlacaba.analog"
+    },
+    "android": {
+      "package": "com.wlacaba.analog"
+    }
+  }
+}
