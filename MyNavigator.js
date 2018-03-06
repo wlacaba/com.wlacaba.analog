@@ -6,6 +6,7 @@ import React from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 import { DofScreen } from './screens/DofScreen';
+import { LightMeterScreen } from './screens/LightMeterScreen'
 import { CircleButton } from './components/CircleButton';
 
 /*Screens for Navigation. Should be in their own .js files-------------------------*/
@@ -38,13 +39,6 @@ const HomeScreen = ({navigation}) => (
   </View>
 );
 
-const Light = ({navigation}) => (
-  <View style={styles.standardView}>
-    <StatusBar barStyle='dark-content'/>
-    <Text style={styles.title}>LIGHT METER</Text>
-  </View>
-);
-
 const Log = ({navigation}) => (
   <View style={styles.standardView}>
     <StatusBar barStyle='dark-content'/>
@@ -63,7 +57,7 @@ const MyNavigator = StackNavigator({
   },
 
   LightMeter: {
-    screen: Light
+    screen: LightMeterScreen
   },
 
   Logbook: {
